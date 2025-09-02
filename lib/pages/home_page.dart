@@ -20,7 +20,7 @@ ToDoDataBase db = ToDoDataBase();
 @override
   void initState() {
     //if this is the first time opening app then create default data
-    if (_myBox.get("TODOLIST") == null){
+    if (_myBox.get("TODO LIST") == null){
       db.createInitialData();
     }else{
       //if data already exists data
@@ -81,7 +81,7 @@ final _controller = TextEditingController();
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
-        title: const Text('TO DO  LIST'),
+        title: const Text('TO DO LIST'),
         elevation: 0,
         backgroundColor: Colors.yellow,
       ),
